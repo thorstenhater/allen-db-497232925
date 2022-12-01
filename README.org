@@ -2,7 +2,7 @@
 
 - Uses a slightly modified morphology to patch around Arbor's and Allen's
   difference in opinion about SWC.
-  - I added a $1e-3 \mu m$ root segment id=0 with parent=-1
+  - I added a $1 nm$ root segment id=0 with parent=-1
   - Shifted all /other/ ids and parents by $+1$
   - Patched the suspicious parent 11 somewhere in the middle to 1139 which is
     listed directly above. Might be a typo in reconstructing the file might be
