@@ -25,7 +25,7 @@ for block in fit['genome']:
     # awkward format, part une: { "section": region, "name": parameter, "value": float, "mechanism": mech }
     # repetitions of section/mechanism are possible to set different parameters
     mch = block['mechanism'] or 'pas' # empty string on mechanism means 'pas' or leak
-    reg = block['section']            # dend | apic | soma | ...
+    reg = block['section']            # dend | apic | soma | axon
     val = float(block['value'])       # value
     key = block['name'].removesuffix(('_' + mch)) # {parameter name}_{mechanism name} unless 'pas' ...
     # ... then it _could_ be one the the parameter thingies ...
@@ -82,11 +82,6 @@ dec.place(ctr, A.iclamp(100, 1000, 0.2), 'inj')
 dec.place(ctr, A.threshold_detector(-40), 'det')
 
 # Read patched morphology
-# - I added a 1e-3 um root segment 0 w/ parent id -1
-# - Shifted all _other_ ids and parents by +1
-# - Patched the suspicious parent 11 somewhere in the middle to 1139
-#   which is listed directly above. Might be a typo in reconstructing
-#   the file
 mrf = A.load_swc_neuron('reconstruction-patched.swc')
 
 # construct a simple simulation
