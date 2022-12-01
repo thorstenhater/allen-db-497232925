@@ -17,7 +17,7 @@
 
 * Result
 At $I=200pA$
-[[/img/arbor.png][plo]]
+[[file:./img/arbor.png]]
 * Acknowledgements
 - Original model by the Allen Institute
   https://celltypes.brain-map.org/experiment/electrophysiology/474626527
