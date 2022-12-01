@@ -15,6 +15,10 @@
   - A buggy mechanism, I am looking at you, ~CaDynamics~
   - Error in parsing/applying ~fit.json~
 
+* Result
+At $I=200pA$
+[[arbor.png]]
+
 * Acknowledgements
 - Original model by the Allen Institute
   https://celltypes.brain-map.org/experiment/electrophysiology/474626527
