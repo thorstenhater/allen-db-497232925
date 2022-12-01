@@ -17,7 +17,7 @@
 
 * Result
 At $I=200pA$
-[[./arbor.png]]
+[[file:./arbor.png]]
 
 * Acknowledgements
 - Original model by the Allen Institute
