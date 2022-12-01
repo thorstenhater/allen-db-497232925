@@ -1,0 +1,20 @@
+* Arbor Port of Allen DB Cell Model ~#497232925~
+
+- Uses a slightly modified morphology to patch around Arbor's and Allen's
+  difference in opinion about SWC.
+  - I added a $1e-3 \mu m$ root segment id=0 with parent=-1
+  - Shifted all /other/ ids and parents by $+1$
+  - Patched the suspicious parent 11 somewhere in the middle to 1139 which is
+    listed directly above. Might be a typo in reconstructing the file might be
+    incorrect on my side. Either way, without this, the file won't load.
+- In the current form spike counts /do not match/, which could have all kinds of
+  reasons
+  - Allen's simulations alter the axon at runtime, we don't.
+  - Numerical differences.
+  - Use (or absence) of Nernst.
+  - A buggy mechanism, I am looking at you, ~CaDynamics~
+  - Error in parsing/applying ~fit.json~
+
+* Acknowledgements
+- Original model by the Allen Institute
+  https://celltypes.brain-map.org/experiment/electrophysiology/474626527
