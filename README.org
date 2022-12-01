@@ -17,7 +17,7 @@
 
 * Result
 At $I=200pA$
-[[.img/arbor.png][lot]]
+[[/img/arbor.png][plot]]
 
 * Acknowledgements
 - Original model by the Allen Institute
